@@ -1,0 +1,42 @@
+{
+  "name": "deps-inspector",
+  "version": "1.0.0",
+  "description": "A CLI tool that scans multiple projects and locations, analyzing dependencies across package.json files.",
+  "main": "dist/index.js",
+  "author": {
+    "name": "Nikita Kharitonov",
+    "email": "nkhari.dev@gmail.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SlashNK/deps-inspector"
+  },
+  "bin": {
+    "deps-inspector": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node-dev --respawn src/index.ts",
+    "lint": "eslint src --ext .ts"
+  },
+  "dependencies": {
+    "commander": "^13.1.0",
+    "dotenv": "^16.4.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.1",
+    "@typescript-eslint/eslint-plugin": "^8.23.0",
+    "@typescript-eslint/parser": "^8.23.0",
+    "eslint": "^9.19.0",
+    "eslint-config-prettier": "^10.0.1",
+    "prettier": "^3.4.2",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.7.3"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
